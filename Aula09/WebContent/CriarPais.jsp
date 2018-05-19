@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>cerveja.biz - Criar Cliente</title>
+    <title>pais.com - Criar Pais</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -20,7 +20,7 @@
     <div id="main" class="container">
         <h3 class="page-header">Incluir Pais</h3>
         <!-- Formulario para inclusao de clientes -->
-        <form action="ManterPais.do" method="post">
+        <form action="controller.do" method="post">
             <!-- area de campos do form -->
             <div class="row">
                 <div class="form-group col-md-12">
@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="form-group col-md-6">
                     <label for="populacao">Populacao</label>
-                    <input type="number" class="form-control" name="populacao" id="populacao" maxlength="15" pattern="(?:\(\d{2}\)|\d{2})[- ]?\d{5}[- ]?\d{4}" placeholder="9999999999999">
+                    <input type="number" class="form-control" name="populacao" id="populacao" maxlength="15" placeholder="9999999999999">
                 </div>
 
                 <div class="form-group col-md-6">
@@ -42,7 +42,7 @@
             <hr />
             <div id="actions" class="row">
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary" name="acao" value="Criar">Salvar</button>
+                    <button type="submit" class="btn btn-primary" name="command" value="CriarPais">Salvar</button>
                     <a href="index.jsp" class="btn btn-default">Cancelar</a>
                 </div>
             </div>

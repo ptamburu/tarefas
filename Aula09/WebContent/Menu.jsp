@@ -9,11 +9,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.jsp">cerveja.biz</a>
+                <a class="navbar-brand" href="index.jsp">ritogomes.com</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="listarPaises.do?acao=reiniciar">Paises</a>
+                    <li><a href="controller.do?command=Reiniciar">Paises</a>
                     </li>
                     <li><a href="#">Marcas</a>
                     </li>

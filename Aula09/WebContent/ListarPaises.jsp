@@ -7,7 +7,7 @@
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Buscar Paises</title>
+            <title>ritogomes.com Buscar Paises</title>
 
             <link href="css/bootstrap.min.css" rel="stylesheet">
             <link href="css/style.css" rel="stylesheet">
@@ -19,7 +19,7 @@
 			<c:import url="Menu.jsp"/>
             <!-- Container Principal -->
             <div id="main" class="container">
-                <form action="listarPaises.do" method="post">
+                <form action="controller.do" method="post">
                     <div id="top" class="row">
                         <div class="col-md-3">
                             <h2>Paises</h2>
@@ -29,7 +29,7 @@
                             <div class="input-group h2">
                                 <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Paises (deixe vazio para trazer todos)">
                                 <span class="input-group-btn">
-                <button class="btn btn-primary" type="submit" name="acao" value="buscar">
+                <button class="btn btn-primary" type="submit" name="command" value="Buscar">
                     <span class="glyphicon glyphicon-search"></span>
                                 </button>
                                 </span>
@@ -73,9 +73,9 @@
                                                 ${pais.area}
                                             </td>
                                             <td class="actions">
-                                                <a class="btn btn-success btn-xs" href="ManterPais.do?acao=Visualizar&id=${pais.id }&nome=${pais.nome}&populacao=${pais.populacao }&area=${pais.area}">Visualizar</a>
-                                                <a class="btn btn-warning btn-xs" href="ManterPais.do?acao=Editar&id=${pais.id}&nome=${pais.nome}&populacao=${pais.populacao }&area=${pais.area}">Editar</a>
-                                                <a class="btn btn-danger btn-xs" href="ManterPais.do?acao=Excluir&id=${pais.id}&nome=${pais.nome}&populacao=${pais.populacao }&area=${pais.area}">Excluir</a>
+                                                <a class="btn btn-success btn-xs" href="controller.do?command=VisualizarPais&id=${pais.id }">Visualizar</a>
+                                                <a class="btn btn-warning btn-xs" href="controller.do?command=EditarPais&id=${pais.id}">Editar</a>
+                                                <a class="btn btn-danger btn-xs" href="controller.do?command=ExcluirPais&id=${pais.id}">Excluir</a>
                                             </td>
                                         </tr>
                             </c:forEach>

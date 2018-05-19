@@ -8,7 +8,7 @@
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>cerveja.biz - Alterar Cliente</title>
+            <title>ritogomes.com - Alterar Pais</title>
 
             <link href="css/bootstrap.min.css" rel="stylesheet">
             <link href="css/style.css" rel="stylesheet">
@@ -21,7 +21,7 @@
                 <div id="main" class="container">
                     <h3 class="page-header">Alterar Pais #${pais.id }</h3>
                     <!-- Formulario para alteração de clientes -->
-                    <form action="ManterPais.do" method="post">
+                    <form action="controller.do" method="post">
                         <!-- area de campos do form -->
                         <input type="hidden" name="id" value="${pais.id }" />
                         <div class="row">
@@ -44,7 +44,7 @@
                         <hr />
                         <div id="actions" class="row">
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary" name="acao" value="Alterar">Salvar</button>
+                                <button type="submit" class="btn btn-primary" name="command" value="AtualizarPais">Salvar</button>
                                 <a href="ListarPaises.jsp" class="btn btn-default">Cancelar</a>
                             </div>
                         </div>

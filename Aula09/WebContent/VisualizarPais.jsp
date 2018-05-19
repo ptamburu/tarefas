@@ -7,7 +7,7 @@
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Pais - Visualizar pais</title>
+            <title>ritogomes.com - Visualizar pais</title>
 
             <link href="css/bootstrap.min.css" rel="stylesheet">
             <link href="css/style.css" rel="stylesheet">
@@ -27,9 +27,9 @@
                                 Deseja realmente excluir este Pais?
                             </div>
                             <div class="modal-footer">
-                                <form action="ManterPais.do" method="post">
+                                <form action="controller.do" method="post">
                                     <input type="hidden" name="id" value="${pais.id }" />
-                                    <button type="submit" class="btn btn-primary" name="acao" value="Excluir">Sim</button>
+                                    <button type="submit" class="btn btn-primary" name="command" value="ExcluirPais">Sim</button>
                                     <button type="button" class="btn btn-default" data-dismiss="modal">N&atilde;o</button>
                                 </form>
                             </div>
@@ -70,7 +70,7 @@
                     <hr />
                     <div id="actions" class="row">
                         <div class="col-md-12">
-                            <a href="ManterPais.do?acao=Editar&id=${pais.id}&nome=${pais.nome}&populacao=${pais.populacao }&area=${pais.area}" class="btn btn-primary">Editar</a>
+                            <a href="controller.do?command=EditarPais&id=${pais.id}" class="btn btn-primary">Editar</a>
                             <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#delete-modal">Excluir</a>
                             <a href="ListarPaises.jsp" class="btn btn-default">Voltar</a>
                         </div>
